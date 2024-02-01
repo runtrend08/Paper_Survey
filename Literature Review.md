@@ -147,12 +147,12 @@
  - **文章总结**：
 
 ### 11 中科院Li，Xiang  “Let Model Keep Evolving”
- - **文章题目**：MCRe: A Unified Framework for Handling Malicious Traffic With Noise Labels Based on Multidimensional Constraint Representation
+ - **文章题目**：Let model keep evolving: Incremental learning for encrypted traffic classification
  - **发表单位**：中科院；中国科技大学
- - **发表时间**：2024.1
- - **发表刊物**：IEEE TIFS
+ - **发表时间**：2023.12
+ - **发表刊物**：COSE
  - **文章简介**：文章提出一种基于多维约束表达（MCRe）的通用框架，用于解决恶意流量数据集中的噪声标记问题。其将data cleaning和robust training统一到一个理想的表达函数逼近中，其包含几个特质：信息完整性约束、簇分离约束和核心逼近约束，被定义用来驱动MCRe在迭代中逼近最理想的表达函数。这些约束让MCRe可以学到单独、类内、全局的分布式知识，避免不合逻辑的领域知识提取，确保强噪声鲁棒性。
- - **面临挑战**：真实恶意流量数据集中“标记噪声”问题很严重，直接影响到基于DL的IDS的有效性。处理噪声标记的数据集现有方法主要分为两类：（1）data cleaning；（2）robust training；但是这两种方法会忽略数据集中不同组件的信息，导致在高噪声环境下性能的断崖式下滑（Cliff-like drop）。
+ - **面临挑战**：网络环境不断变化和演进，新应用不断出现。
  - **文章贡献**：**流量语义化、Transformer编码、配置可感知、可抵御概念漂移**。
  - **特征输入**：
  - **模型训练**：；
@@ -161,5 +161,6 @@
  - **文章总结**：
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NTYyNzkxOSw5MzA3NzY4MTldfQ==
+eyJoaXN0b3J5IjpbLTE4NTU0MjM0OTEsMTA0NTYyNzkxOSw5Mz
+A3NzY4MTldfQ==
 -->
