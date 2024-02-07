@@ -169,7 +169,7 @@
  - **发表单位**：中科院；中国科技大学
  - **发表时间**：2024.1
  - **发表刊物**：COSE（Review）
- - **文章简介**：针对真实网络环境下，（1）流量类别不平衡导致的Label Bias，（2）流量同质化；如何利用广泛易获取到的无监督流量数据学习强泛化能力的数据表达依然是一个很大的挑战。文章提出一种基于多维约束表达（MCRe）的通用框架，用于解决恶意流量数据集中的噪声标记问题。其将data cleaning和robust training统一到一个理想的表达函数逼近中，其包含几个特质：信息完整性约束、簇分离约束和核心逼近约束，被定义用来驱动MCRe在迭代中逼近最理想的表达函数。这些约束让MCRe可以学到单独、类内、全局的分布式知识，避免不合逻辑的领域知识提取，确保强噪声鲁棒性。
+ - **文章简介**：针对真实网络环境下，（1）流量类别不平衡导致的Label Bias，（2）流量同质化；如何利用广泛易获取到的无监督流量数据学习强泛化能力的数据表达依然是一个很大的挑战。文章提出一种类别不平衡流量表达模型，叫做Contrastive Encrypted Traffic Pre-training（CETP）。该模型通过ba
  - **面临挑战**：针对真实网络环境下，（1）流量类别不平衡导致的Label Bias，（2）流量同质化；如何利用广泛易获取到的无监督流量数据学习强泛化能力的数据表达依然是一个很大的挑战。
  - **文章贡献**：**流量语义化、Transformer编码、配置可感知、可抵御概念漂移**。
  - **特征输入**：
@@ -179,7 +179,7 @@
  - **文章总结**：
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM5NTA2MDE0LC0xNDE2MzQ0MDY0LDg2OT
-Q0MDQxNiwxMTY3NTE3ODgzLDIwOTEwODk1MTEsMTU0OTQ1NDU0
-MywxMDQ1NjI3OTE5LDkzMDc3NjgxOV19
+eyJoaXN0b3J5IjpbLTE1MTYxOTg0ODIsLTE0MTYzNDQwNjQsOD
+Y5NDQwNDE2LDExNjc1MTc4ODMsMjA5MTA4OTUxMSwxNTQ5NDU0
+NTQzLDEwNDU2Mjc5MTksOTMwNzc2ODE5XX0=
 -->
