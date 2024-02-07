@@ -169,8 +169,8 @@
  - **发表单位**：中科院；中国科技大学
  - **发表时间**：2024.1
  - **发表刊物**：COSE（Review）
- - **文章简介**：针对真实网络环境下，流量类别不平衡导致的Label Bias，以及文章提出一种基于多维约束表达（MCRe）的通用框架，用于解决恶意流量数据集中的噪声标记问题。其将data cleaning和robust training统一到一个理想的表达函数逼近中，其包含几个特质：信息完整性约束、簇分离约束和核心逼近约束，被定义用来驱动MCRe在迭代中逼近最理想的表达函数。这些约束让MCRe可以学到单独、类内、全局的分布式知识，避免不合逻辑的领域知识提取，确保强噪声鲁棒性。
- - **面临挑战**：真实恶意流量数据集中“标记噪声”问题很严重，直接影响到基于DL的IDS的有效性。处理噪声标记的数据集现有方法主要分为两类：（1）data cleaning；（2）robust training；但是这两种方法会忽略数据集中不同组件的信息，导致在高噪声环境下性能的断崖式下滑（Cliff-like drop）。
+ - **文章简介**：针对真实网络环境下，（1）流量类别不平衡导致的Label Bias，（2）流量同质化；如何利用广泛易获取到的无监督流量数据学习强泛化能力的数据表达依然是一个很大的挑战。文章提出一种基于多维约束表达（MCRe）的通用框架，用于解决恶意流量数据集中的噪声标记问题。其将data cleaning和robust training统一到一个理想的表达函数逼近中，其包含几个特质：信息完整性约束、簇分离约束和核心逼近约束，被定义用来驱动MCRe在迭代中逼近最理想的表达函数。这些约束让MCRe可以学到单独、类内、全局的分布式知识，避免不合逻辑的领域知识提取，确保强噪声鲁棒性。
+ - **面临挑战**：针对真实网络环境下，（1）流量类别不平衡导致的Label Bias，（2）流量同质化；如何利用广泛易获取到的无监督流量数据学习强泛化能力的数据表达依然是一个很大的挑战。
  - **文章贡献**：**流量语义化、Transformer编码、配置可感知、可抵御概念漂移**。
  - **特征输入**：
  - **模型训练**：；
@@ -179,7 +179,7 @@
  - **文章总结**：
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NDg3MDI4OSwtMTQxNjM0NDA2NCw4Nj
-k0NDA0MTYsMTE2NzUxNzg4MywyMDkxMDg5NTExLDE1NDk0NTQ1
-NDMsMTA0NTYyNzkxOSw5MzA3NzY4MTldfQ==
+eyJoaXN0b3J5IjpbMjM5NTA2MDE0LC0xNDE2MzQ0MDY0LDg2OT
+Q0MDQxNiwxMTY3NTE3ODgzLDIwOTEwODk1MTEsMTU0OTQ1NDU0
+MywxMDQ1NjI3OTE5LDkzMDc3NjgxOV19
 -->
