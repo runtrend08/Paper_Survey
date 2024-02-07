@@ -174,12 +174,12 @@
  - **文章贡献**：**类别不平衡、半监督、伪标签、Transformer**。
  - **特征输入**：原始报文RD（Raw Datagram）和统计特征（包长度，PL）。每个流取前32个分组、128个字节。每个字节序列由2个字节构成一个unit，用Byte-Pair Encoding，长度用‘+、-’标明方向。
  - **模型训练**：；
- - **数据集	**：在22类真实恶意流量数据集上。
+ - **数据集	**：CP-Android、CIC-2019、ISCX-VPN。
  - **评估结果**：平均提高53.42%，14个月时间内容可以有效环节概念漂移问题。证明其有效性和泛化能力。
  - **文章总结**：
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTUxMzE5MywtMTQxNjM0NDA2NCw4Nj
-k0NDA0MTYsMTE2NzUxNzg4MywyMDkxMDg5NTExLDE1NDk0NTQ1
-NDMsMTA0NTYyNzkxOSw5MzA3NzY4MTldfQ==
+eyJoaXN0b3J5IjpbMzkwOTQ0MDU5LC0xNDE2MzQ0MDY0LDg2OT
+Q0MDQxNiwxMTY3NTE3ODgzLDIwOTEwODk1MTEsMTU0OTQ1NDU0
+MywxMDQ1NjI3OTE5LDkzMDc3NjgxOV19
 -->
