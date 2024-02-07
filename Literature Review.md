@@ -162,8 +162,24 @@
 ![输入图片说明](/imgs/2024-02-01/uV8BVM600fPPNife.png)
 ![输入图片说明](/imgs/2024-02-01/FnBujWfqSXg9bmER.png)
 ![输入图片说明](/imgs/2024-02-01/ZwvMMEwY7d3HBYq5.png)
+
+
+### 12 中科院Yua，QJ  “MCRe”
+ - **文章题目**：CETP: A Novel Semi-supervised Framework based on Contrastive Pre-training for Imbalanced Encrypted Traffic Classification Representation
+ - **发表单位**：中科院；中国科技大学
+ - **发表时间**：2024.1
+ - **发表刊物**：COSE（）
+ - **文章简介**：文章提出一种基于多维约束表达（MCRe）的通用框架，用于解决恶意流量数据集中的噪声标记问题。其将data cleaning和robust training统一到一个理想的表达函数逼近中，其包含几个特质：信息完整性约束、簇分离约束和核心逼近约束，被定义用来驱动MCRe在迭代中逼近最理想的表达函数。这些约束让MCRe可以学到单独、类内、全局的分布式知识，避免不合逻辑的领域知识提取，确保强噪声鲁棒性。
+ - **面临挑战**：真实恶意流量数据集中“标记噪声”问题很严重，直接影响到基于DL的IDS的有效性。处理噪声标记的数据集现有方法主要分为两类：（1）data cleaning；（2）robust training；但是这两种方法会忽略数据集中不同组件的信息，导致在高噪声环境下性能的断崖式下滑（Cliff-like drop）。
+ - **文章贡献**：**流量语义化、Transformer编码、配置可感知、可抵御概念漂移**。
+ - **特征输入**：
+ - **模型训练**：；
+ - **数据集	**：在22类真实恶意流量数据集上。
+ - **评估结果**：平均提高53.42%，14个月时间内容可以有效环节概念漂移问题。证明其有效性和泛化能力。
+ - **文章总结**：
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTYzNDQwNjQsODY5NDQwNDE2LDExNj
-c1MTc4ODMsMjA5MTA4OTUxMSwxNTQ5NDU0NTQzLDEwNDU2Mjc5
-MTksOTMwNzc2ODE5XX0=
+eyJoaXN0b3J5IjpbOTE4Njc0MDIxLC0xNDE2MzQ0MDY0LDg2OT
+Q0MDQxNiwxMTY3NTE3ODgzLDIwOTEwODk1MTEsMTU0OTQ1NDU0
+MywxMDQ1NjI3OTE5LDkzMDc3NjgxOV19
 -->
