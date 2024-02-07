@@ -169,9 +169,9 @@
  - **发表单位**：中科院；中国科技大学
  - **发表时间**：2024.1
  - **发表刊物**：COSE（Review）
- - **文章简介**：针对真实网络环境下，（1）流量类别不平衡导致的Label Bias，（2）流量同质化；如何利用广泛易获取到的无监督流量数据学习强泛化能力的数据表达依然是一个很大的挑战。文章提出一种类别不平衡流量表达模型，叫做Contrastive Encrypted Traffic Pre-training（CETP）。该模型通过ba
+ - **文章简介**：针对真实网络环境下，（1）流量类别不平衡导致的Label Bias，（2）流量同质化；如何利用广泛易获取到的无监督流量数据学习强泛化能力的数据表达依然是一个很大的挑战。文章提出一种类别不平衡流量表达模型，叫做Contrastive Encrypted Traffic Pre-training（CETP）。该模型通过半监督持续调优、伪标记递归和动态Loss-weighting 算法来缓解label bias。
  - **面临挑战**：针对真实网络环境下，（1）流量类别不平衡导致的Label Bias，（2）流量同质化；如何利用广泛易获取到的无监督流量数据学习强泛化能力的数据表达依然是一个很大的挑战。
- - **文章贡献**：**流量语义化、Transformer编码、配置可感知、可抵御概念漂移**。
+ - **文章贡献**：**类别不平衡、半监督、伪标签、Transformer、**。
  - **特征输入**：
  - **模型训练**：；
  - **数据集	**：在22类真实恶意流量数据集上。
@@ -179,7 +179,7 @@
  - **文章总结**：
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTYxOTg0ODIsLTE0MTYzNDQwNjQsOD
+eyJoaXN0b3J5IjpbLTE4NzA2ODA1NjgsLTE0MTYzNDQwNjQsOD
 Y5NDQwNDE2LDExNjc1MTc4ODMsMjA5MTA4OTUxMSwxNTQ5NDU0
 NTQzLDEwNDU2Mjc5MTksOTMwNzc2ODE5XX0=
 -->
