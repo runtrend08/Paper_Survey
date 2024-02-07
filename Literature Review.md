@@ -175,12 +175,13 @@
  - **特征输入**：原始报文RD（Raw Datagram）和统计特征（包长度，PL）。每个流取前32个分组、128个字节。每个字节序列由2个字节构成一个unit，用Byte-Pair Encoding，长度用‘+、-’标明方向。
  - **模型训练**：；
  - **数据集	**：CP-Android、CIC-2019、ISCX-VPN。
- - **评估结果**：平均提高53.42%，14个月时间内容可以有效环节概念漂移问题。证明其有效性和泛化能力。
+ - **评估结果**：平均提高53.42%，14个月时间内容可以有效缓解概念漂移问题。证明其有效性和泛化能力。
  - **文章总结**：
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ3NTQ1OTE1LDEwNzgwNjQ2NjYsLTIwOT
-AzODIwNDIsLTE1MTY3MzE0OTUsLTE3MDE3ODA2MTcsLTE0MTYz
-NDQwNjQsODY5NDQwNDE2LDExNjc1MTc4ODMsMjA5MTA4OTUxMS
-wxNTQ5NDU0NTQzLDEwNDU2Mjc5MTksOTMwNzc2ODE5XX0=
+eyJoaXN0b3J5IjpbLTEyMDAyMDQ4NzIsODQ3NTQ1OTE1LDEwNz
+gwNjQ2NjYsLTIwOTAzODIwNDIsLTE1MTY3MzE0OTUsLTE3MDE3
+ODA2MTcsLTE0MTYzNDQwNjQsODY5NDQwNDE2LDExNjc1MTc4OD
+MsMjA5MTA4OTUxMSwxNTQ5NDU0NTQzLDEwNDU2Mjc5MTksOTMw
+Nzc2ODE5XX0=
 -->
