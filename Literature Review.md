@@ -183,7 +183,7 @@
 for Class Imbalance with Contrastive Pre-Training
  - **发表单位**：中科院；中国科技大学
  - **发表时间**：2023.8
- - **发表刊物**：COSE（Review）
+ - **发表刊物**：某国际会议。**该文章为CETP的前序研究工作。**
  - **文章简介**：针对真实网络环境下，（1）流量类别不平衡导致的Label Bias，（2）流量同质化；如何利用广泛易获取到的无监督流量数据学习强泛化能力的数据表达依然是一个很大的挑战。文章提出一种类别不平衡流量表达模型，叫做Contrastive Encrypted Traffic Pre-training（CETP）。该模型通过半监督持续调优、伪标记递归和动态Loss-weighting 算法来缓解label bias。
  - **面临挑战**：**问题背景**：针对真实网络环境下，（1）**不平衡**流量类别不平衡导致的Label Bias，（2）流量**同质化**（指代同一个APP厂商家族旗下会有多个APP，比如腾讯、阿里，这些APP会共用开发组件，比如认证、广告、分析等，不同APP应用会产生类似的加密流量，易造成流量同质化），造成模糊的分类边界；（3）**难标记**如何利用广泛易获取到的无监督流量数据学习强泛化能力的数据表达依然是一个很大的挑战。**现存技术局限性**：（1）数据再平衡：Oversampling/SMOTE/GAN，依赖于数据分布的先验知识，缺乏泛化性；（2）改造Loss Function。比如Focal Loss，Cost-Sensitive；在样本极端不平衡条件下存在局限性。（3）Pre-training：利用大量无标记数据来获取无偏差的数据表达，是一个新的方向。本文就是Motivated by this。
  - **文章贡献**：**类别不平衡、半监督、伪标签、Transformer**。（1）CETP：为了解决不平衡流量带来的Label Bias问题，通过Pre-Training，不直接用类标记，从无标记数据中学习鲁棒的流量表达；（2）基于无监督数据，精心构建了正负对，并学习通用的流量表达；（3）应用两个预训练任务（CLM，Contrastive Learning Model）和（MSM，Masked Sequence Model）来构建正负对采样方法，目的是捕捉流量上下文关系特征，构建通用的流量表达；（4）利用伪标记递归、动态Loss weighting方法做半监督调优。
@@ -195,10 +195,10 @@ for Class Imbalance with Contrastive Pre-Training
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTA2NDUxOTYsLTE4OTk3NTg4NTEsMT
-IzMjEwNzA3NywxMjgxMTg0NzQ4LC0xMjAwMjA0ODcyLDg0NzU0
-NTkxNSwxMDc4MDY0NjY2LC0yMDkwMzgyMDQyLC0xNTE2NzMxND
-k1LC0xNzAxNzgwNjE3LC0xNDE2MzQ0MDY0LDg2OTQ0MDQxNiwx
-MTY3NTE3ODgzLDIwOTEwODk1MTEsMTU0OTQ1NDU0MywxMDQ1Nj
-I3OTE5LDkzMDc3NjgxOV19
+eyJoaXN0b3J5IjpbMTYzMzcyNTEyOCwtMTg5OTc1ODg1MSwxMj
+MyMTA3MDc3LDEyODExODQ3NDgsLTEyMDAyMDQ4NzIsODQ3NTQ1
+OTE1LDEwNzgwNjQ2NjYsLTIwOTAzODIwNDIsLTE1MTY3MzE0OT
+UsLTE3MDE3ODA2MTcsLTE0MTYzNDQwNjQsODY5NDQwNDE2LDEx
+Njc1MTc4ODMsMjA5MTA4OTUxMSwxNTQ5NDU0NTQzLDEwNDU2Mj
+c5MTksOTMwNzc2ODE5XX0=
 -->
