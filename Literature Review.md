@@ -186,20 +186,20 @@ for Class Imbalance with Contrastive Pre-Training
  - **发表刊物**：某国际会议。**该文章为CETP的前序研究工作。**
  - **文章简介**：文章提出了一个PASS模型，Pre-trAined Semi-Supervised；在该框架中，（1）**鲁棒流量特征表达**：构建了一个多粒度的流量序列+一个多头注意力编码器；（2）**流量类别不平衡和流量同质化**：采用Contrastive pre-training；设计一个训练数据再采样算法，将单个流量样本构建为正、强/弱负样本对，优化编码器将正样本聚在一起、负样本尽可能分离，让流量特征更具鉴别力；（3）为有效利用无标记数据，采用‘Attention Encoder + Classification Layer’构建模型，用原始训练数据fine-tuning，形成分类模型；然后对无标记数据进行推理标记为pseudo-label，然后采用合适的门限确定伪标记的可用性；设计了一个权重采样策略和动态损失函数来平衡原始训练数据和伪标记数据的数据分布。
  - **面临挑战**：**问题背景**：针对真实网络环境下，（1）**不平衡**流量类别不平衡导致的Label Bias，（2）流量**同质化**（指代同一个APP厂商家族旗下会有多个APP，比如腾讯、阿里，这些APP会共用开发组件，比如认证、广告、分析等，不同APP应用会产生类似的加密流量，易造成流量同质化），造成模糊的分类边界；（3）**难标记**如何利用广泛易获取到的无监督流量数据学习强泛化能力的数据表达依然是一个很大的挑战。**现存技术局限性**：（1）数据再平衡：Oversampling/SMOTE/GAN，依赖于数据分布的先验知识，缺乏泛化性；（2）改造Loss Function。比如Focal Loss，Cost-Sensitive；在样本极端不平衡条件下存在局限性。（3）Pre-training：利用大量无标记数据来获取无偏差的数据表达，是一个新的方向。本文就是Motivated by this。
- - **文章贡献**：**类别不平衡、半监督、伪标签、Transformer**。（1）CETP：为了解决不平衡流量带来的Label Bias问题，通过Pre-Training，不直接用类标记，从无标记数据中学习鲁棒的流量表达；（2）基于无监督数据，精心构建了正负对，并学习通用的流量表达；（3）应用两个预训练任务（CLM，Contrastive Learning Model）和（MSM，Masked Sequence Model）来构建正负对采样方法，目的是捕捉流量上下文关系特征，构建通用的流量表达；（4）利用伪标记递归、动态Loss weighting方法做半监督调优。
- - **特征输入**：原始报文RD（Raw Datagram）和统计特征（包长度，PL）。每个流取前32个分组、128个字节。每个字节序列由2个字节构成一个unit，用Byte-Pair Encoding，长度用‘+、-’标明方向。
+ - **文章贡献**：**类别不平衡、半监督、伪标签、Transformer**。
+ - **特征输入**：
  - **模型训练**：；
  - **数据集	**：CP-Android、CIC-2019、ISCX-VPN。
- - **评估结果**：平均提高53.42%，14个月时间内容可以有效缓解概念漂移问题。证明其有效性和泛化能力。
+ - **评估结果**：与三类SOTA对比。（1）统计方法：AppScanner；（）
  - **文章总结**：好文章。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0ODMzNzM2NSw1MDQ4MTU5MDEsMTYzMz
-cyNTEyOCwtMTg5OTc1ODg1MSwxMjMyMTA3MDc3LDEyODExODQ3
-NDgsLTEyMDAyMDQ4NzIsODQ3NTQ1OTE1LDEwNzgwNjQ2NjYsLT
-IwOTAzODIwNDIsLTE1MTY3MzE0OTUsLTE3MDE3ODA2MTcsLTE0
-MTYzNDQwNjQsODY5NDQwNDE2LDExNjc1MTc4ODMsMjA5MTA4OT
-UxMSwxNTQ5NDU0NTQzLDEwNDU2Mjc5MTksOTMwNzc2ODE5XX0=
-
+eyJoaXN0b3J5IjpbMjE0OTc3MjIxLC0yNDgzMzczNjUsNTA0OD
+E1OTAxLDE2MzM3MjUxMjgsLTE4OTk3NTg4NTEsMTIzMjEwNzA3
+NywxMjgxMTg0NzQ4LC0xMjAwMjA0ODcyLDg0NzU0NTkxNSwxMD
+c4MDY0NjY2LC0yMDkwMzgyMDQyLC0xNTE2NzMxNDk1LC0xNzAx
+NzgwNjE3LC0xNDE2MzQ0MDY0LDg2OTQ0MDQxNiwxMTY3NTE3OD
+gzLDIwOTEwODk1MTEsMTU0OTQ1NDU0MywxMDQ1NjI3OTE5LDkz
+MDc3NjgxOV19
 -->
