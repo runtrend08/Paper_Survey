@@ -190,12 +190,15 @@ for Class Imbalance with Contrastive Pre-Training
  - **特征输入**：
  - **模型训练**：；
  - **数据集	**：CP-Android、CIC-2019、ISCX-VPN。
- - **评估结果**：与三类SOTA对比。（1）统计特征：AppScanner；（2）序列特征：2D-CNN等；（3）基于预训练：PERT、ET-BERT；做了Ablation Study；做了Sensitivity Analysis（预训练样本shu'l）；
+ - **评估结果**：
+	 - 与三类SOTA对比。（1）统计特征：AppScanner；（2）序列特征：2D-CNN等；（3）基于预训练：PERT、ET-BERT；
+	 - 做了Ablation Study；做了Sensitivity Analysis（调整预训练样本数量）；
+	 - 做了Scalability
  - **文章总结**：好文章。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNjQ2MTc1NCwtMjQ4MzM3MzY1LDUwND
+eyJoaXN0b3J5IjpbMTkyNTU2MTQ3MywtMjQ4MzM3MzY1LDUwND
 gxNTkwMSwxNjMzNzI1MTI4LC0xODk5NzU4ODUxLDEyMzIxMDcw
 NzcsMTI4MTE4NDc0OCwtMTIwMDIwNDg3Miw4NDc1NDU5MTUsMT
 A3ODA2NDY2NiwtMjA5MDM4MjA0MiwtMTUxNjczMTQ5NSwtMTcw
